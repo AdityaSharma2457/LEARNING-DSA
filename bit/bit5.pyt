@@ -1,0 +1,9 @@
+class Solution:
+    def countBitsFlip(self, a, b):
+            xor=a^b
+            count=0
+            while(xor):
+                if xor&1:
+                    count+=1
+                xor=xor>>1
+            return count
